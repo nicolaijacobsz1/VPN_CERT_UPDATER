@@ -3,7 +3,7 @@
 # CSR Generation Script
 
 ## Overview
-This PowerShell script automates the creation of a Certificate Signing Request (CSR) for computers within Oldcastle Corporation's IT department. The script prompts for the computer's name, sets various organizational parameters, and generates a CSR file with specified cryptographic properties.
+This PowerShell script automates the creation of a Certificate Signing Request (CSR) for computers within domain Corporation's IT department. The script prompts for the computer's name, sets various organizational parameters, and generates a CSR file with specified cryptographic properties.
 
 ## Requirements
 - **PowerShell 5.1 or higher**
@@ -17,7 +17,7 @@ This PowerShell script automates the creation of a Certificate Signing Request (
 2. **Execute the Script:**
    - Navigate to the folder containing the script and run it by typing:
      ```powershell
-     .\scriptName.ps1
+     .\CSR.ps1
      ```
      Replace `scriptName.ps1` with the actual script filename.
 
@@ -45,7 +45,7 @@ This PowerShell script automates the creation of a Certificate Signing Request (
    - Informs the user that the CSR has been generated and provides the file path.
 
 ## Output
-The script generates a CSR file named `oldcastle_CSR.csr` and saves it to the desktop. This file is then used to request a certificate from a Certificate Authority (CA).
+The script generates a CSR file named `domain_CSR.csr` and saves it to the desktop. This file is then used to request a certificate from a Certificate Authority (CA).
 
 ## Modification and Customization
 To adapt the script for different organizational units or domains, modify the variable definitions (`$organization`, `$organizationalUnit`, etc.) at the beginning of the script.
@@ -72,9 +72,8 @@ This PowerShell script automates the process of importing a `.p7b` certificate f
 2. **Execute the Script:**
    - Navigate to the directory containing the script and run it by typing:
      ```powershell
-     .\scriptName.ps1
+     .\import.ps1
      ```
-     Replace `scriptName.ps1` with the actual script filename.
 
 3. **Select the Certificate File:**
    - A Windows Explorer dialog will appear. Navigate to and select the `.p7b` certificate file you wish to import.
